@@ -1,0 +1,15 @@
+@page
+@model WordsModel
+
+<html>
+    <body>
+        <h1>Word Counter</h1>
+
+        @if (Model.WordCount.HasValue)
+        {
+            <hr />
+            <p>You typed: "@Model.Words"</p>
+            <h3>The word count is: @Model.WordCount</h3>
+        }
+    </body>
+</html>

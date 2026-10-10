@@ -22,3 +22,15 @@ build_property.MSBuildProjectDirectory = C:\Users\Ismail\Desktop\projects\nea\pl
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Ismail/Desktop/projects/nea/play/basic/csharp/UtilityPage/pages/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = cGFnZXNcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ismail/Desktop/projects/nea/play/basic/csharp/UtilityPage/pages/submit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = cGFnZXNcc3VibWl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ismail/Desktop/projects/nea/play/basic/csharp/UtilityPage/pages/words.cshtml]
+build_metadata.AdditionalFiles.TargetPath = cGFnZXNcd29yZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
