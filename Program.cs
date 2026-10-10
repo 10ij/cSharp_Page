@@ -29,4 +29,24 @@ app.MapPost("/submit", async (HttpContext context) =>
     ", "text/html");
 });
 
+app.MapPost("/word", async (HttpContext context) =>
+{
+    string input;
+    int count;
+
+    var form = await context.Request.ReadFormAsync();
+    input = form["words"].ToString();
+
+    // No Len() Function it seems
+    count = input.Length;
+
+    return Results.Content($@"
+            <body>
+                <h1>The word count is: {count}</h1>
+                <a href='/'>Back to form</a>
+            </body>
+        </html>
+    ", "text/html");
+});
+
 app.Run();
