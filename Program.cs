@@ -10,4 +10,23 @@ app.UseStaticFiles();
 
 // app.MapGet("/", () => "Hello World!");
 
+// Same as $_SERVER['REQUEST_METHOD'] === 'POST'
+// HttpContext gives access to HTTP req and resp
+// Use asynchronous
+app.MapPost("/submit", async (HttpContext context) =>
+{
+    string username;
+    var form = await context.Request.ReadFormAsync();
+    username = form["username"];
+
+    return Results.Content($@"
+        <html>
+            <body>
+                <h1>Hello, {username}!</h1>
+                <a href='/'>Back to form</a>
+            </body>
+        </html>
+    ", "text/html");
+});
+
 app.Run();
